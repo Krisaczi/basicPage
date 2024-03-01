@@ -19,6 +19,8 @@ body {
 .wrapper {
 }
 .navigaton {
+  background-color: var(--backgroundTwo);
+  color: var(--fontPrimary);
 }
 .logo {
 }
@@ -28,13 +30,18 @@ body {
 }
 .menu-list-items {
 }
+.menu-link {
+  text-decoration: none;
+  color: var(--fontPrimary);
+}
 .landingPage {
   height: 100vh;
   background-image: url(/d869216e199c4faf8b78918e652e7719.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  color: var(--fontPrimary);
 }
-.section-title {
+.landingPage-title {
 }
 .landingPage-content {
 }
@@ -49,6 +56,9 @@ body {
 }
 .about {
 }
+.about-title {
+  color: var(--fontThree);
+}
 .about-content {
 }
 .person {
@@ -61,16 +71,24 @@ body {
 }
 
 .offer {
+  background-color: var(--backgroundThree);
+}
+.offer-title {
+  color: var(--fontPrimary);
 }
 .offer-cards-box {
 }
 .offer-card {
 }
+
 .footer {
+  background-color: var(--backgroundTwo);
+  color: var(--fontPrimary);
 }
 .company-name {
 }
 .icons {
+  color: var(--fontPrimary);
 }
 
 @media screen and (min-width: 1200px) {
@@ -84,25 +102,35 @@ body {
   .navigaton {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   .logo {
   }
   .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .menu-list {
     display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
   }
   .menu-list-items {
   }
   .landingPage {
   }
-  .section-title {
+  .landingPage-title {
   }
   .landingPage-content {
   }
   .landingPage-link {
   }
   .about {
+  }
+  .about-title {
   }
   .about-content {
   }
@@ -128,6 +156,8 @@ body {
   .offer {
   }
   .offer-cards-box {
+    width: 720px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -142,10 +172,12 @@ body {
   }
   .footer {
     height: 100px;
-    background-color: bisque;
   }
   .company-name {
   }
   .icons {
+    width: 31px;
+    height: 31px;
+    font-weight: 700;
   }
 }
