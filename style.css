@@ -1,3 +1,14 @@
+:root {
+  --fontPrimary: #ffffff;
+  --fontSecondary: #f1f1f1;
+  --fontThree: #152d41;
+  --fontFour: #000000;
+  --fontBold: 700;
+  --fontLigh: 400;
+  --backgroundOne: #f1f1f1;
+  --backgroundTwo: #4e4e4e;
+  --backgroundThree: #405d78;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -19,12 +30,22 @@ body {
 }
 .landingPage {
   height: 100vh;
+  background-image: url(/d869216e199c4faf8b78918e652e7719.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .section-title {
 }
 .landingPage-content {
 }
 .landingPage-link {
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  padding: 5px 45px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
 }
 .about {
 }
