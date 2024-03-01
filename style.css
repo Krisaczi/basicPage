@@ -26,6 +26,15 @@ body {
 }
 .about-content {
 }
+.person {
+}
+.picture {
+}
+.person-name {
+}
+.person-description {
+}
+
 .offer {
 }
 .offer-cards-box {
@@ -37,4 +46,81 @@ body {
 .company-name {
 }
 .icons {
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .wrapper {
+  }
+  .navigaton {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo {
+  }
+  .menu {
+  }
+  .menu-list {
+    display: flex;
+  }
+  .menu-list-items {
+  }
+  .landingPage {
+  }
+  .section-title {
+  }
+  .landingPage-content {
+  }
+  .landingPage-link {
+  }
+  .about {
+  }
+  .about-content {
+  }
+
+  .person {
+    display: flex;
+  }
+
+  .person:nth-child(even) {
+    flex-flow: row-reverse;
+  }
+  .picture {
+    width: 200px;
+    height: 200px;
+    background-color: darkcyan;
+    border-radius: 50%;
+  }
+  .person-name {
+  }
+  .person-description {
+  }
+
+  .offer {
+  }
+  .offer-cards-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    align-items: center;
+    justify-items: center;
+  }
+  .offer-card {
+    width: 200px;
+    height: 200px;
+    background-color: cadetblue;
+  }
+  .footer {
+    height: 100px;
+    background-color: bisque;
+  }
+  .company-name {
+  }
+  .icons {
+  }
 }
