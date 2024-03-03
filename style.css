@@ -3,6 +3,8 @@
   --fontSecondary: #f1f1f1;
   --fontThree: #152d41;
   --fontFour: #000000;
+  --fontSize: 18px;
+  --lineHeight: 21px;
   --fontBold: 700;
   --fontLigh: 400;
   --backgroundOne: #f1f1f1;
@@ -16,7 +18,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.wrapper {
+.container {
 }
 .navigaton {
   background-color: var(--backgroundTwo);
@@ -92,19 +94,25 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .wrapper {
+  .container {
     width: 960px;
     margin: 0 auto;
   }
 
-  .wrapper {
-  }
-  .navigaton {
+  .nav-wrapper {
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+  }
+
+  .navigaton {
+    padding: 15px 0;
   }
   .logo {
+    font-weight: var(--fontBold);
+    font-size: var(--fontSize);
+    line-height: var(--lineHeight);
   }
   .menu {
     display: flex;
@@ -119,10 +127,29 @@ body {
     padding: 0;
   }
   .menu-list-items {
+    font-size: var(--fontSize);
+    line-height: var(--lineHeight);
+    font-weight: var(--fontLigh);
+    padding-left: 30px;
+  }
+
+  [disabled] {
+    cursor: not-allowed;
   }
   .landingPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .landingPage-wrapper {
+    width: 90%;
+    margin: 0 auto;
   }
   .landingPage-title {
+    font-size: calc(--fontSize * 2);
+    font-weight: var(--fontBold);
+    line-height: calc(--lineHeight * 2);
   }
   .landingPage-content {
   }
