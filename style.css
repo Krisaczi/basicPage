@@ -74,6 +74,7 @@ body {
 .offer-cards-box {
 }
 .offer-card {
+  background-color: var(--backgroundOne);
 }
 
 .footer {
@@ -135,6 +136,11 @@ body {
     justify-content: center;
   }
 
+  .landingPage-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+
   .landingPage-title {
     font-size: var(--fontSize);
     font-weight: var(--fontBold);
@@ -153,6 +159,11 @@ body {
   }
   .about {
   }
+
+  .about-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
   .about-title {
   }
   .about-content {
@@ -160,8 +171,12 @@ body {
 
   .person {
     display: flex;
+    gap: 50px;
   }
-
+  .person-details {
+    display: flex;
+    flex-direction: column;
+  }
   .person:nth-child(even) {
     flex-flow: row-reverse;
   }
@@ -177,6 +192,15 @@ body {
   }
 
   .offer {
+    height: 698px;
+  }
+  .offer-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .offer-title {
+    padding-top: 50px;
+    margin-bottom: 80px;
   }
   .offer-cards-box {
     width: 720px;
@@ -189,16 +213,26 @@ body {
     justify-items: center;
   }
   .offer-card {
-    width: 200px;
-    height: 200px;
-    background-color: cadetblue;
+    width: 198px;
+    height: 193.78px;
   }
   .footer {
     height: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
   .company-name {
   }
   .icons {
+    display: flex;
+    flex-direction: row;
     width: 31px;
     height: 31px;
     font-weight: 700;
