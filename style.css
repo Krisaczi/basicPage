@@ -38,7 +38,7 @@ body {
 }
 .landingPage {
   height: 100vh;
-  background-image: url(/d869216e199c4faf8b78918e652e7719.jpg);
+  background-image: url(d869216e199c4faf8b78918e652e7719.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--fontPrimary);
@@ -48,13 +48,6 @@ body {
 .landingPage-content {
 }
 .landingPage-link {
-  border: 2px solid white;
-  color: white;
-  text-decoration: none;
-  padding: 5px 45px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 21px;
 }
 .about {
 }
@@ -142,18 +135,21 @@ body {
     justify-content: center;
   }
 
-  .landingPage-wrapper {
-    width: 90%;
-    margin: 0 auto;
-  }
   .landingPage-title {
-    font-size: calc(--fontSize * 2);
+    font-size: var(--fontSize);
     font-weight: var(--fontBold);
-    line-height: calc(--lineHeight * 2);
+    line-height: var(--lineHeight);
   }
   .landingPage-content {
   }
   .landingPage-link {
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    padding: 5px 45px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
   }
   .about {
   }
@@ -170,8 +166,8 @@ body {
     flex-flow: row-reverse;
   }
   .picture {
-    width: 200px;
-    height: 200px;
+    width: 33%;
+    aspect-ratio: 1;
     background-color: darkcyan;
     border-radius: 50%;
   }
