@@ -248,9 +248,9 @@ body {
     margin: 0;
   }
   .footer {
-    height: 100px;
     display: flex;
     justify-content: space-between;
+    padding: 20px 0;
   }
   .footer-wrapper {
     width: 90%;
@@ -258,15 +258,22 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
   .company-name {
+    font-size: var(--fontSize-basic);
+    font-weight: var(--fontBold);
+    line-height: var(--lineHeight);
   }
   .icons {
     display: flex;
     flex-direction: row;
+    gap: 15px;
     width: 31px;
     height: 31px;
     font-weight: 700;
+    font-size: calc(var(--fontSize-basic) * 2);
+    margin-right: 60px;
   }
 }
 
