@@ -53,6 +53,8 @@ body {
 }
 .about-title {
   color: var(--fontThree);
+  font-size: calc(var(--fontSize) * 2);
+  margin-bottom: 50px;
 }
 .about-content {
 }
@@ -61,8 +63,14 @@ body {
 .picture {
 }
 .person-name {
+  font-weight: var(--fontBold);
+  line-height: var(--lineHeight);
+  margin-bottom: 25px;
 }
 .person-description {
+  margin-bottom: 0;
+  font-size: var(--fontLigh);
+  color: var(--fontFour);
 }
 
 .offer {
@@ -163,8 +171,11 @@ body {
   .about-wrapper {
     width: 90%;
     margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   .about-title {
+    font-weight: var(--fontBold);
   }
   .about-content {
   }
@@ -176,15 +187,18 @@ body {
   .person-details {
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
   .person:nth-child(even) {
     flex-flow: row-reverse;
   }
   .picture {
-    width: 33%;
+    width: 22%;
     aspect-ratio: 1;
     background-color: darkcyan;
     border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .person-name {
   }
