@@ -3,13 +3,15 @@
   --fontSecondary: #f1f1f1;
   --fontThree: #152d41;
   --fontFour: #000000;
-  --fontSize: 18px;
+  --fontSize-basic: 18px;
+  --fontSize-larg: 24px;
   --lineHeight: 21px;
   --fontBold: 700;
   --fontLigh: 400;
   --backgroundOne: #f1f1f1;
   --backgroundTwo: #4e4e4e;
   --backgroundThree: #405d78;
+  --active-box: #e07a64;
 }
 html {
   scroll-behavior: smooth;
@@ -52,9 +54,6 @@ body {
 .about {
 }
 .about-title {
-  color: var(--fontThree);
-  font-size: calc(var(--fontSize) * 2);
-  margin-bottom: 50px;
 }
 .about-content {
 }
@@ -63,14 +62,8 @@ body {
 .picture {
 }
 .person-name {
-  font-weight: var(--fontBold);
-  line-height: var(--lineHeight);
-  margin-bottom: 25px;
 }
 .person-description {
-  margin-bottom: 0;
-  font-size: var(--fontLigh);
-  color: var(--fontFour);
 }
 
 .offer {
@@ -82,7 +75,12 @@ body {
 .offer-cards-box {
 }
 .offer-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: var(--backgroundOne);
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 .footer {
@@ -176,6 +174,9 @@ body {
   }
   .about-title {
     font-weight: var(--fontBold);
+    color: var(--fontThree);
+    font-size: calc(var(--fontSize-basic) * 2);
+    margin-bottom: 50px;
   }
   .about-content {
   }
@@ -201,8 +202,14 @@ body {
     background-size: cover;
   }
   .person-name {
+    font-weight: var(--fontBold);
+    line-height: var(--lineHeight);
+    margin-bottom: 25px;
   }
   .person-description {
+    margin-bottom: 0;
+    font-size: var(--fontLigh);
+    color: var(--fontFour);
   }
 
   .offer {
@@ -215,6 +222,8 @@ body {
   .offer-title {
     padding-top: 50px;
     margin-bottom: 80px;
+    font-weight: var(--fontBold);
+    font-size: calc(var(--fontSize-basic) * 2);
   }
   .offer-cards-box {
     width: 720px;
@@ -229,6 +238,14 @@ body {
   .offer-card {
     width: 198px;
     height: 193.78px;
+  }
+  .offer-card {
+  }
+  .card-title {
+  }
+  .card-content {
+    font-size: var(--fontSize-larg);
+    margin: 0;
   }
   .footer {
     height: 100px;
@@ -250,5 +267,22 @@ body {
     width: 31px;
     height: 31px;
     font-weight: 700;
+  }
+}
+
+@media (hover: hover) {
+  .offer-card {
+    position: relative;
+  }
+  .offer-card:hover::before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color: var(--active-box);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    translate: -50% -50%;
   }
 }
