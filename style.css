@@ -50,6 +50,8 @@ body {
 .landingPage-content {
 }
 .landingPage-link {
+  border-radius: 2px;
+  transition: 0.1s;
 }
 .about {
 }
@@ -195,6 +197,7 @@ body {
   }
   .picture {
     width: 22%;
+    min-width: 22%;
     aspect-ratio: 1;
     background-color: darkcyan;
     border-radius: 50%;
@@ -271,13 +274,15 @@ body {
     gap: 15px;
     width: 31px;
     height: 31px;
-    font-weight: 700;
-    font-size: calc(var(--fontSize-basic) * 2);
-    margin-right: 60px;
   }
 }
 
 @media (hover: hover) {
+  .landingPage-link:hover {
+    background-color: var(--backgroundOne);
+    color: var(--fontFour);
+    opacity: 0.9;
+  }
   .offer-card {
     position: relative;
   }
