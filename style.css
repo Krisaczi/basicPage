@@ -150,11 +150,17 @@ body {
   }
 
   .landingPage-title {
-    font-size: var(--fontSize);
+    font-size: calc(var(--fontSize-basic) * 2);
     font-weight: var(--fontBold);
-    line-height: var(--lineHeight);
+    line-height: valc(var(--lineHeight) * 2);
+    text-wrap: wrap;
+    width: 577px;
+    margin-bottom: 50px;
   }
   .landingPage-content {
+    margin-bottom: 50px;
+    font-size: var(--fontSize-basic);
+    font-weight: var(--fontBold);
   }
   .landingPage-link {
     border: 2px solid white;
@@ -211,7 +217,8 @@ body {
   }
   .person-description {
     margin-bottom: 0;
-    font-size: var(--fontLigh);
+    font-size: var(--fontSize-basic);
+    line-height: var(--lineHeight);
     color: var(--fontFour);
   }
 
@@ -271,9 +278,9 @@ body {
   .icons {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 15px;
-    width: 31px;
-    height: 31px;
+    font-size: 28px;
   }
 }
 
@@ -285,6 +292,10 @@ body {
   }
   .offer-card {
     position: relative;
+  }
+  .offer-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease-out;
   }
   .offer-card:hover::before {
     content: "";
