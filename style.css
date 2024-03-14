@@ -266,21 +266,22 @@ body {
   .about-wrapper {
     width: 90%;
     margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
   .about-title {
     font-weight: var(--fontBold);
     color: var(--fontThree);
     font-size: calc(var(--fontSize-basic) * 2);
-    margin-bottom: 50px;
-  }
-  .about-content {
+    margin-bottom: 25px;
+    padding-top: 25px;
   }
 
   .person {
     display: flex;
+    flex-direction: row;
     gap: 50px;
+    margin-top: 25px;
   }
   .person-details {
     display: flex;
@@ -319,24 +320,22 @@ body {
     margin: 0 auto;
   }
   .offer-title {
-    padding-top: 50px;
-    margin-bottom: 80px;
+    padding-top: 30px;
+    margin-bottom: 30px;
     font-weight: var(--fontBold);
     font-size: calc(var(--fontSize-basic) * 2);
   }
   .offer-cards-box {
-    width: 720px;
-    margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 15px;
     align-items: center;
     justify-items: center;
   }
   .offer-card {
-    width: 198px;
-    height: 193.78px;
+    width: 158px;
+    height: 153.78px;
   }
   .offer-card {
   }
@@ -469,6 +468,7 @@ body {
 
   .person {
     display: flex;
+    flex-direction: row;
     gap: 50px;
   }
   .person-details {
