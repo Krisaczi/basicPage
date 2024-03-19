@@ -83,8 +83,6 @@ body {
   border-radius: 2px;
   transition: 0.1s;
 }
-.about {
-}
 .about-wrapper {
   width: 90%;
   margin: 0 auto 50px auto;
@@ -97,8 +95,7 @@ body {
   padding-top: 50px;
   font-size: calc(var(--fontSize-basic) * 2);
 }
-.about-content {
-}
+
 .person {
   display: flex;
   flex-direction: column;
@@ -109,7 +106,10 @@ body {
 .picture {
   width: 40%;
   aspect-ratio: 1;
+  background-color: darkcyan;
   border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-bottom: 50px;
 }
 .person-name {
@@ -150,11 +150,25 @@ body {
   align-items: center;
   background-color: var(--backgroundOne);
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease-in-out;
 }
 
 .card-content {
   font-size: var(--fontSize-larg);
 }
+
+.newest-offer::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  background-color: var(--active-box);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  translate: -50% -50%;
+}
+
 .offer-new {
   font-size: var(--fontSize-basic);
 }
@@ -187,22 +201,11 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     width: 700px;
-    margin: 0 auto;
   }
 
-  .nav-wrapper {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .navigaton {
-    padding: 15px 0;
-  }
   .logo {
     font-weight: var(--fontBold);
-    font-size: var(--fontSize);
+
     line-height: var(--lineHeight);
   }
   .menu {
@@ -232,39 +235,21 @@ body {
     flex-direction: column;
     justify-content: center;
   }
-
-  .landingPage-wrapper {
-    width: 90%;
-    margin: 0 auto;
-  }
-
   .landingPage-title {
-    font-size: calc(var(--fontSize-basic) * 2);
     font-weight: var(--fontBold);
-    line-height: valc(var(--lineHeight) * 2);
+
     text-wrap: wrap;
     width: 577px;
     margin-bottom: 50px;
   }
-  .landingPage-content {
-    margin-bottom: 50px;
-    font-size: var(--fontSize-basic);
-    font-weight: var(--fontBold);
-  }
+
   .landingPage-link {
-    border: 2px solid white;
-    color: white;
-    text-decoration: none;
-    padding: 5px 45px;
     font-size: 18px;
     font-weight: 700;
     line-height: 21px;
   }
-  .about {
-  }
 
   .about-wrapper {
-    width: 90%;
     margin: 0 auto;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -295,10 +280,7 @@ body {
     width: 22%;
     min-width: 22%;
     aspect-ratio: 1;
-    background-color: darkcyan;
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin-bottom: 0;
   }
   .person-name {
     font-weight: var(--fontBold);
@@ -337,10 +319,7 @@ body {
     width: 158px;
     height: 153.78px;
   }
-  .offer-card {
-  }
-  .card-title {
-  }
+
   .card-content {
     font-size: var(--fontSize-larg);
     margin: 0;
@@ -375,22 +354,10 @@ body {
 @media screen and (min-width: 1200px) {
   .container {
     width: 960px;
-    margin: 0 auto;
   }
 
-  .nav-wrapper {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .navigaton {
-    padding: 15px 0;
-  }
   .logo {
     font-weight: var(--fontBold);
-    font-size: var(--fontSize);
     line-height: var(--lineHeight);
   }
   .menu {
@@ -412,47 +379,30 @@ body {
     padding-left: 30px;
   }
 
-  [disabled] {
+  .notAllowed {
     cursor: not-allowed;
   }
+
   .landingPage {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-
-  .landingPage-wrapper {
-    width: 90%;
-    margin: 0 auto;
-  }
-
   .landingPage-title {
-    font-size: calc(var(--fontSize-basic) * 2);
     font-weight: var(--fontBold);
-    line-height: valc(var(--lineHeight) * 2);
+
     text-wrap: wrap;
     width: 577px;
     margin-bottom: 50px;
   }
-  .landingPage-content {
-    margin-bottom: 50px;
-    font-size: var(--fontSize-basic);
-    font-weight: var(--fontBold);
-  }
+
   .landingPage-link {
-    border: 2px solid white;
-    color: white;
-    text-decoration: none;
-    padding: 5px 45px;
     font-size: 18px;
     font-weight: 700;
     line-height: 21px;
   }
-  .about {
-  }
 
   .about-wrapper {
-    width: 90%;
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -462,8 +412,6 @@ body {
     color: var(--fontThree);
     font-size: calc(var(--fontSize-basic) * 2);
     margin-bottom: 50px;
-  }
-  .about-content {
   }
 
   .person {
@@ -483,10 +431,7 @@ body {
     width: 22%;
     min-width: 22%;
     aspect-ratio: 1;
-    background-color: darkcyan;
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin-bottom: 0;
   }
   .person-name {
     font-weight: var(--fontBold);
@@ -527,10 +472,7 @@ body {
     width: 198px;
     height: 193.78px;
   }
-  .offer-card {
-  }
-  .card-title {
-  }
+
   .card-content {
     font-size: var(--fontSize-larg);
     margin: 0;
@@ -573,17 +515,5 @@ body {
   }
   .offer-card:hover {
     transform: scale(1.05);
-    transition: transform 0.5s ease-out;
-  }
-  .offer-card:hover::before {
-    content: "";
-    width: 22px;
-    height: 22px;
-    background-color: var(--active-box);
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    translate: -50% -50%;
   }
 }

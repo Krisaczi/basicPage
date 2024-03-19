@@ -18,8 +18,8 @@
     <title>Basic page</title>
   </head>
   <body>
-    <div class="container">
-      <nav class="navigaton">
+    <nav class="navigaton">
+      <div class="container">
         <div class="nav-wrapper">
           <div class="logo">LOGO</div>
           <div class="menu">
@@ -30,106 +30,112 @@
               <li class="menu-list-items">
                 <a href="#ourOffer" class="menu-link">Oferta</a>
               </li>
-              <li class="menu-list-items">
-                <span id="#contactUs" class="menu-link" disabled>Kontakt</span>
+              <li class="menu-list-items notAllowed" >
+                <span id="#contactUs" class="menu-link">Kontakt</span>
               </li>
             </ul>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
 
-      <section class="landingPage">
-        <div class="landingPage-wrapper">
-          <h2 class="landingPage-title">
-            Nasza firma oferuje najwyższej jakości produkty.
-          </h2>
-          <p class="landingPage-content">Nie wierz nam na słowo - sprawdź</p>
-          <a href="#ourOffer" class="landingPage-link">Oferta</a>
-        </div>
-      </section>
-      <section class="about" id="aboutUs">
-        <div class="about-wrapper">
-          <h2 class="about-title">Nasi specjaliści</h2>
-          <div class="about-content">
-            <div class="person">
-              <img
-                src="Allage_fall_ms_appleton_large.png"
-                alt="profile picture"
-                class="picture"
-              />
-              <div class="person-details">
-                <h3 class="person-name">Imię Nazwisko [ dział ]</h3>
-                <p class="person-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                  vel massa et lacus egestas cursus a non magna. Fusce
-                  scelerisque blandit nunc, id malesuada ex lobortis a. Integer
-                  felis nisi, tempor elementum lorem in, varius pellentesque
-                  ligula. Duis efficitur lacinia enim, non tincidunt libero
-                  ultrices in.
-                </p>
-              </div>
+    <section class="landingPage">
+      <div class="container">
+      <div class="landingPage-wrapper">
+        <h2 class="landingPage-title">
+          Nasza firma oferuje najwyższej jakości produkty.
+        </h2>
+        <p class="landingPage-content">Nie wierz nam na słowo - sprawdź</p>
+        <a href="#ourOffer" class="landingPage-link">Oferta</a>
+      </div>
+    </section>
+    <section class="about" id="aboutUs">
+      <div class="container">
+      <div class="about-wrapper">
+        <h2 class="about-title">Nasi specjaliści</h2>
+        <div class="about-content">
+          <div class="person">
+            <img
+              src="Allage_fall_ms_appleton_large.png"
+              alt="profile picture"
+              class="picture"
+            />
+            <div class="person-details">
+              <h3 class="person-name">Imię Nazwisko [ dział ]</h3>
+              <p class="person-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                vel massa et lacus egestas cursus a non magna. Fusce scelerisque
+                blandit nunc, id malesuada ex lobortis a. Integer felis nisi,
+                tempor elementum lorem in, varius pellentesque ligula. Duis
+                efficitur lacinia enim, non tincidunt libero ultrices in.
+              </p>
             </div>
-            <div class="person">
-              <img src="Isabella.png" alt="profile picture" class="picture" />
-              <div class="person-details">
-                <h3 class="person-name">Imię Nazwisko [ dział ]</h3>
-                <p class="person-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                  vel massa et lacus egestas cursus a non magna. Fusce
-                  scelerisque blandit nunc, id malesuada ex lobortis a. Integer
-                  felis nisi, tempor elementum lorem in, varius pellentesque
-                  ligula. Duis efficitur lacinia enim, non tincidunt libero
-                  ultrices in.
-                </p>
-              </div>
+          </div>
+          <div class="person">
+            <img src="Isabella.png" alt="profile picture" class="picture" />
+            <div class="person-details">
+              <h3 class="person-name">Imię Nazwisko [ dział ]</h3>
+              <p class="person-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                vel massa et lacus egestas cursus a non magna. Fusce scelerisque
+                blandit nunc, id malesuada ex lobortis a. Integer felis nisi,
+                tempor elementum lorem in, varius pellentesque ligula. Duis
+                efficitur lacinia enim, non tincidunt libero ultrices in.
+              </p>
             </div>
           </div>
         </div>
-      </section>
-      <section class="offer" id="ourOffer">
-        <div class="offer-wrapper">
-          <h2 class="offer-title">Czym zajmuje się nasza firma?</h2>
-          <div class="offer-cards-box">
-            <div class="offer-card">
-              <div class="card-title"></div>
-              <p class="card-content">Usługa 1</p>
-              <p class="offer-new">(Nowość)</p>
-            </div>
-            <div class="offer-card">
-              <div class="card-title"></div>
-              <p class="card-content">Usługa 2</p>
-            </div>
-            <div class="offer-card">
-              <div class="card-title"></div>
-              <p class="card-content">Usługa 3</p>
-            </div>
-            <div class="offer-card">
-              <div class="card-title"></div>
-              <p class="card-content">Usługa 4</p>
-            </div>
-            <div class="offer-card">
-              <div class="card-title"></div>
-              <p class="card-content">Usługa 5</p>
-            </div>
-            <div class="offer-card">
-              <div class="card-title"></div>
-              <p class="card-content">Usługa 6</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <footer class="footer">
-        <div class="footer-wrapper">
-          <div class="company-name">
-            Nazwa firmy - wszelkie prawa zastrzeżone, 2019
-          </div>
-          <div class="icons">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-facebook"></i>
-          </div>
-        </div>
-      </footer>
+      </div>
     </div>
+  </div>
+    </section>
+    <section class="offer" id="ourOffer">
+      <div class="container">
+      <div class="offer-wrapper">
+        <h2 class="offer-title">Czym zajmuje się nasza firma?</h2>
+        <div class="offer-cards-box">
+          <div class="offer-card newest-offer">
+            <div class="card-title"></div>
+            <p class="card-content">Usługa 1</p>
+            <p class="offer-new">(Nowość)</p>
+          </div>
+          <div class="offer-card">
+            <div class="card-title"></div>
+            <p class="card-content">Usługa 2</p>
+          </div>
+          <div class="offer-card">
+            <div class="card-title"></div>
+            <p class="card-content">Usługa 3</p>
+          </div>
+          <div class="offer-card">
+            <div class="card-title"></div>
+            <p class="card-content">Usługa 4</p>
+          </div>
+          <div class="offer-card">
+            <div class="card-title"></div>
+            <p class="card-content">Usługa 5</p>
+          </div>
+          <div class="offer-card">
+            <div class="card-title"></div>
+            <p class="card-content">Usługa 6</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+      <div class="footer-wrapper">
+        <div class="company-name">
+          Nazwa firmy - wszelkie prawa zastrzeżone, 2019
+        </div>
+        <div class="icons">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+        </div>
+      </div>
+    </div>
+    </footer>
     <script
       src="https://kit.fontawesome.com/f663374cbc.js"
       crossorigin="anonymous"
