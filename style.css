@@ -121,6 +121,7 @@ body {
   text-align: justify;
   font-size: var(--fontSize-basic);
   font-weight: var(--fontLigh);
+  color: var(--fontFour);
 }
 
 .offer {
@@ -283,24 +284,17 @@ body {
     margin-bottom: 0;
   }
   .person-name {
-    font-weight: var(--fontBold);
     line-height: var(--lineHeight);
     margin-bottom: 25px;
   }
   .person-description {
     margin-bottom: 0;
-    font-size: var(--fontSize-basic);
-    line-height: var(--lineHeight);
-    color: var(--fontFour);
   }
 
   .offer {
     height: 698px;
   }
-  .offer-wrapper {
-    width: 90%;
-    margin: 0 auto;
-  }
+
   .offer-title {
     padding-top: 30px;
     margin-bottom: 30px;
@@ -308,12 +302,10 @@ body {
     font-size: calc(var(--fontSize-basic) * 2);
   }
   .offer-cards-box {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 15px;
     align-items: center;
-    justify-items: center;
   }
   .offer-card {
     width: 158px;
@@ -330,22 +322,16 @@ body {
     padding: 20px 0;
   }
   .footer-wrapper {
-    width: 90%;
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
   .company-name {
-    font-size: var(--fontSize-basic);
     font-weight: var(--fontBold);
     line-height: var(--lineHeight);
   }
   .icons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     gap: 15px;
     font-size: 28px;
   }
@@ -434,24 +420,19 @@ body {
     margin-bottom: 0;
   }
   .person-name {
-    font-weight: var(--fontBold);
     line-height: var(--lineHeight);
     margin-bottom: 25px;
   }
   .person-description {
     margin-bottom: 0;
-    font-size: var(--fontSize-basic);
+
     line-height: var(--lineHeight);
-    color: var(--fontFour);
   }
 
   .offer {
     height: 698px;
   }
-  .offer-wrapper {
-    width: 90%;
-    margin: 0 auto;
-  }
+
   .offer-title {
     padding-top: 50px;
     margin-bottom: 80px;
@@ -461,12 +442,10 @@ body {
   .offer-cards-box {
     width: 720px;
     margin: 0 auto;
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 15px;
     align-items: center;
-    justify-items: center;
   }
   .offer-card {
     width: 198px;
@@ -483,22 +462,16 @@ body {
     padding: 20px 0;
   }
   .footer-wrapper {
-    width: 90%;
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
   .company-name {
-    font-size: var(--fontSize-basic);
     font-weight: var(--fontBold);
     line-height: var(--lineHeight);
   }
   .icons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     gap: 15px;
     font-size: 28px;
   }
