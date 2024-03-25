@@ -81,7 +81,6 @@ body {
   padding: 5px 45px;
   font-size: var(--fontSize-basic);
   border-radius: 2px;
-  transition: 0.1s;
 }
 .about-wrapper {
   width: 90%;
@@ -158,6 +157,10 @@ body {
   font-size: var(--fontSize-larg);
 }
 
+.offer-card {
+  position: relative;
+}
+
 .newest-offer::before {
   content: "";
   width: 22px;
@@ -228,9 +231,6 @@ body {
     padding-left: 30px;
   }
 
-  [disabled] {
-    cursor: not-allowed;
-  }
   .landingPage {
     display: flex;
     flex-direction: column;
@@ -238,8 +238,6 @@ body {
   }
   .landingPage-title {
     font-weight: var(--fontBold);
-
-    text-wrap: wrap;
     width: 577px;
     margin-bottom: 50px;
   }
@@ -276,6 +274,7 @@ body {
   }
   .person:nth-child(even) {
     flex-flow: row-reverse;
+    text-align: right;
   }
   .picture {
     width: 22%;
@@ -342,10 +341,6 @@ body {
     width: 960px;
   }
 
-  .logo {
-    font-weight: var(--fontBold);
-    line-height: var(--lineHeight);
-  }
   .menu {
     display: flex;
     flex-direction: column;
@@ -376,8 +371,6 @@ body {
   }
   .landingPage-title {
     font-weight: var(--fontBold);
-
-    text-wrap: wrap;
     width: 577px;
     margin-bottom: 50px;
   }
@@ -483,9 +476,7 @@ body {
     color: var(--fontFour);
     opacity: 0.9;
   }
-  .offer-card {
-    position: relative;
-  }
+
   .offer-card:hover {
     transform: scale(1.05);
   }
