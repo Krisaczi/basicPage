@@ -310,12 +310,10 @@ body {
     margin: 0;
   }
   .footer {
-    display: flex;
     justify-content: space-between;
     padding: 20px 0;
   }
   .footer-wrapper {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -373,6 +371,7 @@ body {
     font-size: 18px;
     font-weight: 700;
     line-height: 21px;
+    transition: 1s;
   }
 
   .about-wrapper {
@@ -444,12 +443,9 @@ body {
     margin: 0;
   }
   .footer {
-    display: flex;
-    justify-content: space-between;
     padding: 20px 0;
   }
   .footer-wrapper {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
